@@ -12,7 +12,7 @@ import { MysqlConnectionOptions } from 'typeorm/driver/mysql/MysqlConnectionOpti
 
 export default class TypeOrmConfig {
   static getOrmConfig(configService: ConfigService): TypeOrmModuleOptions {
-    // console.log("this is the db host = "+ process.env.DB_NAME)
+    console.log("this is the db host = "+ process.env.DB_NAME)
     return {
       type: 'mysql',
       host: 'bp78i02qwtg5oaw3uiac-mysql.services.clever-cloud.com',
