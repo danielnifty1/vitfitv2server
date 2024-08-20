@@ -24,7 +24,7 @@ export default class TypeOrmConfig {
 
       entities: [Book],
 
-      synchronize: true,
+      // synchronize: true,
     };
   }
 }
