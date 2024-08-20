@@ -22,7 +22,7 @@ async function bootstrap() {
       }
     }), 
   );
-  app.enableCors({origin:['http://127.0.0.1:5502']});
-  await app.listen(3000);
+  // app.enableCors({origin:['http://127.0.0.1:5502']});
+  await app.listen(8080);
 }
 bootstrap();
