@@ -14,7 +14,7 @@ import { MailService } from './mail/service/mail.service';
 
 
 @Module({
-  imports: [ConfigModule.forRoot(),TypeOrmModule.forRootAsync(typeOrmConfigAsync),UserModule],
+  imports: [ConfigModule.forRoot(),TypeOrmModule.forRootAsync(typeOrmConfigAsync),UserModule,MailService],
    
   controllers: [AppController  ],
   providers: [AppService ],
