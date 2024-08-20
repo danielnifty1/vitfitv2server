@@ -12,7 +12,16 @@ import { MysqlConnectionOptions } from 'typeorm/driver/mysql/MysqlConnectionOpti
 
 export default class TypeOrmConfig {
   static getOrmConfig(configService: ConfigService): TypeOrmModuleOptions {
-    console.log("this is the db host for config = "+ configService.get('DB_USERNAME'))
+    console.log("this is the db host for config = "+ process.env.DB_HOST)
+
+    console.log("this is the db username for config = "+  process.env.DB_USERNAME)
+
+    console.log("this is the db password for config = "+  process.env.DB_PASSWORD)
+
+    console.log("this is the db database for config = "+ process.env.DB_NAME)
+
+    console.log("this is the db port for config = "+ parseInt( process.env.PORT))
+
 
     return {
       type: 'mysql',
