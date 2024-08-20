@@ -10,7 +10,7 @@ import { MailModule } from 'src/mail/mail.module';
 
 imports:[
 
-    TypeOrmModule.forFeature([Book]),MailModule],
+    TypeOrmModule.forFeature([Book])],
     controllers: [UserController],
     providers: [UserService],
 })
