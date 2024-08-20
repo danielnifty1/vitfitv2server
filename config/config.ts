@@ -12,17 +12,18 @@ import { MysqlConnectionOptions } from 'typeorm/driver/mysql/MysqlConnectionOpti
 
 export default class TypeOrmConfig {
   static getOrmConfig(configService: ConfigService): TypeOrmModuleOptions {
-    console.log("this is the db host = "+ process.env.DB_NAME)
+    console.log("this is the db host = "+ configService.get('DB_USERNAME'))
+
     return {
       type: 'mysql',
-      host: 'bp78i02qwtg5oaw3uiac-mysql.services.clever-cloud.com',
-      port:3306,
+      host: process.env.DB_HOST,
+      port: parseInt( process.env.PORT,10),
 
-      username: 'uhjxouvvx5ztaxf0',
-      password: '8brcWA7xP74Lwg3JPjUX',
-      database: 'bp78i02qwtg5oaw3uiac',
+      username:  process.env.DB_USERNAME,
+      password:  process.env.DB_PASSWORD,
+      database:  process.env.DB_NAME,
 
-      entities: [Book],
+      autoLoadEntities:true,
 
       synchronize: true,
     };
