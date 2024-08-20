@@ -9,12 +9,22 @@ import { typeOrmConfigAsync } from 'config/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { MailService } from './mail/service/mail.service';
-
+import configuration from 'config/config';
 
 
 
 @Module({
-  imports: [ConfigModule.forRoot(),TypeOrmModule.forRootAsync(typeOrmConfigAsync),UserModule,MailModule],
+  imports: [
+    ConfigModule.forRoot(
+      {
+        isGlobal: true,
+        expandVariables: true,
+       
+      }
+    ),
+    TypeOrmModule.forRootAsync(typeOrmConfigAsync),
+    UserModule,
+    MailModule],
    
   controllers: [AppController  ],
   providers: [AppService ],
