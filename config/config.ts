@@ -16,7 +16,7 @@ export default class TypeOrmConfig {
     return {
       type: 'mysql',
       host: configService.get('DB_HOST'),
-      port: configService.get('PORT'),
+      port: parseInt( configService.get('PORT'),10),
 
       username: configService.get('DB_USERNAME'),
       password: configService.get('DB_PASSWORD'),
