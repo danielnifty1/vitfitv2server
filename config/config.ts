@@ -15,16 +15,16 @@ export default class TypeOrmConfig {
     // console.log("this is the db host = "+ process.env.DB_NAME)
     return {
       type: 'mysql',
-      host: configService.get('DB_HOST'),
-      port: parseInt( configService.get('PORT'),10),
+      host: 'bp78i02qwtg5oaw3uiac-mysql.services.clever-cloud.com',
+      port:3306,
 
-      username: configService.get('DB_USERNAME'),
-      password: configService.get('DB_PASSWORD'),
-      database: configService.get('DB_NAME'),
+      username: 'uhjxouvvx5ztaxf0',
+      password: '8brcWA7xP74Lwg3JPjUX',
+      database: 'bp78i02qwtg5oaw3uiac',
 
       entities: [Book],
 
-      // synchronize: true,
+      synchronize: true,
     };
   }
 }
