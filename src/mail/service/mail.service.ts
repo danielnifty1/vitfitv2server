@@ -10,13 +10,14 @@ export class MailService {
 
    async sendMail(book:Book){
 
-
+    const url =process.env.SITE_EMAIL+'/auth/forgot-password/reset?';
+  
       await this.mailerService.sendMail({
-        to: this.configService.get("SITE_EMAIL"),
+        to: process.env.SITE_EMAI,
         subject:  `New Booking By ${book.fullname}`,
         template: './booking',
         context: {
-         
+          url,
           name: book.fullname ,
           email: book.email,
         },
