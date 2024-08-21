@@ -18,7 +18,7 @@ export class UserService {
    
 
     async Book(BookParam: BookParam) {
-         const sendMail= await this.mailService.sendMail({...BookParam, id:1})
+         const sendMail= await this.mailService.sendMail({...BookParam})
          
 
     }

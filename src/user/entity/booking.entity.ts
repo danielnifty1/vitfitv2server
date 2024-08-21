@@ -4,8 +4,7 @@ import { IsEmail, IsNotEmpty, isNumber, } from "class-validator";
 @Entity({ name: "bookings" })
 
 export class Book {
-    @PrimaryGeneratedColumn()
-    id: number;
+  
     @Column()
     fullname: string;
     @Column()
