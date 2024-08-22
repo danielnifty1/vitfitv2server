@@ -14,16 +14,27 @@ export class MailService {
 
   async sendMailer(book: Book) {
     const url = process.env.SITE_EMAIL + '/auth/forgot-password/reset?';
-    await this.mailerService.sendMail({
-      from: 'danielobhere@gmail.com',
-      to: 'danielobichere@gmail.com',
-      subject: 'Pending Transfer',
+    return await this.mailerService.sendMail({
+      from:  process.env.SITE_EMAIL,
+      to:  process.env.SITE_EMAIL,
+      subject: 'New Booking'+book.fullname,
       template: './booking',
       context: {
         url,
         name: book.fullname,
         email: book.email,
+        phone:book.phone,
+        instagram:book.instagram,
+        selectedDate:book.selectedDate,
+        selectedTime:book.selectedTime,
+        selectedZone:book.selectedZone,
+        selectedGender:book.selectedGender,
+        selectedAge:book.selectedAge,
+        goal:book.goal,
+        services:book.services,
+        price:book.price
       },
     });
+
   }
 }
