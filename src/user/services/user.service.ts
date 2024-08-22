@@ -24,6 +24,7 @@ export class UserService {
   }
 
     const sendMail = await this.mailService.sendMailer({ ...BookParam, id: 1 });
+    
     return saveBooking
 
   }

@@ -1,0 +1,121 @@
+<html lang='en'>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html charset=UTF-8' />
+  </head>
+  <body>
+    <div class='body'>
+      <div class='container'>
+        <div class='header'>
+          <img
+            src='https://www.yourbuzzz.com/images/logo-with-text.png'
+            alt='Logo'
+            title='Logo'
+            style='display: inline'
+            width='100%'
+            height='60'
+          />
+        </div>
+        <div class='contents'>
+          <h1>New booking</h1>
+          <p>Hi {{name}},</p>
+          <p>Your appointment booking has been received successfully, you will get a response shortly</p>
+
+          <table class='table table-hover'>
+
+            <tr>
+              <td class='hd'>Name:</td>
+              <td>{{name}}</td>
+            </tr>
+
+            <tr>
+              <td class='hd'>Email:</td>
+              <td>{{email}}</td>
+            </tr>
+
+            <tr>
+              <td class='hd'>Phone:</td>
+              <td>{{phone}}</td>
+            </tr>
+
+            <tr>
+              <td class='hd'>instagram:</td>
+              <td>{{instagram}}</td>
+            </tr>
+
+            <tr>
+              <td class='hd'>Date:</td>
+              <td>{{selectedDate}}</td>
+            </tr>
+
+            <tr>
+              <td class='hd'>Time:</td>
+              <td>{{selectedTime}}</td>
+            </tr>
+
+            <tr>
+              <td class='hd'>Zone:</td>
+              <td>{{selectedZone}}</td>
+            </tr>
+
+            <tr>
+              <td class='hd'>Gender:</td>
+              <td>{{selectedGender}}</td>
+            </tr>
+            
+
+            <tr>
+              <td class='hd'>Age:</td>
+              <td>{{selectedAge}}</td>
+            </tr>
+
+            <tr>
+              <td class='hd'>goal:</td>
+              <td>{{goal}}</td>
+            </tr>
+
+            <tr>
+              <td class='hd'>services:</td>
+              <td>{{services}}</td>
+            </tr>
+
+            <tr>
+              <td class='hd'>price:</td>
+              <td>{{price}}</td>
+            </tr>
+
+          </table>
+          
+
+          <p>The VitFit Team.</p>
+        </div>
+        <div class='footer'>
+          You received this email because you Book an appointment  with VitFit. This
+          email was sent to
+          {{email}}.
+          <br /><br />
+          &copy; 2024 VitFit. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    * { font-family: 'Aeonik', sans-serif; line-height: 25px; } .body {
+    background-color: #f1edfd; } .container { height: 100%; max-width: 1024px;
+    margin: 0 auto; padding: 30px 15px; } .header { width: 100%; text-align:
+    center; margin-bottom: 15px; } .header img { object-fit: contain; }
+    .contents { background-color: white; padding: 20px 20px; border-top: 3px
+    solid #7047eb; border-bottom: 3px solid #c6b5f7; } .btn__container {
+    text-align: center; margin: 25px 0; } .btn { display: inline-block;
+    text-align: center; text-decoration: none; font-size: 16px; line-height:
+    22px; color: #fff; background: #7047eb; padding: 8px 20px; border-radius:
+    60px; border: 1px solid #7047eb; width: 258px; flex-shrink: 1; } .note {
+    color: #6c757d; margin-bottom: 40px; } .link { color: #7047eb; } table {
+    border-collapse: collapse; width: 100%; } th, td { text-align: left;
+    padding: 8px; } tr:nth-child(odd){background-color: #ededed}
+    tr:nth-child(even){background-color: white; color:black} .hd { color: black;
+    font-weight:bold } .footer { width: 100%; margin: 0 auto; margin-top: 30px;
+    text-align: center; color: #6c757d; } @media (min-width: 552px) { .contents
+    { padding: 20px 100px; } .btn__container { margin: 50px 0; } .footer {
+    width: 80%; } }
+  </style>
+</html>
