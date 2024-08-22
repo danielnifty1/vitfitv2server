@@ -20,7 +20,7 @@ export default class TypeOrmConfig {
 
     console.log("this is the db database for config = "+ process.env.DB_NAME)
 
-    console.log("this is the db port for config = "+ parseInt( process.env.PORT))
+    console.log("this is the db port for config = "+ parseInt( process.env.DB_PORT))
 
 
     return {

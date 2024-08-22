@@ -10,6 +10,7 @@ export class UserController {
     @Post('booking')
    
     async Book(@Body() BookingDTO:BookingDTO){
+       
         return await this.UserService.Book(BookingDTO)
     }
     

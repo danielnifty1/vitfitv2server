@@ -20,7 +20,7 @@ export class Book {
     @Column()
     selectedDate: string;
 
-    @CreateDateColumn()
+    @Column()
     selectedTime: string;
 
     @Column()
@@ -29,7 +29,7 @@ export class Book {
     @Column()
     selectedGender: string;
 
-    @CreateDateColumn()
+    @Column()
     selectedAge: string;
 
     @Column()
@@ -38,7 +38,7 @@ export class Book {
     @Column()
     services: string;
 
-    @CreateDateColumn()
+    @Column()
     price: string;
 
 

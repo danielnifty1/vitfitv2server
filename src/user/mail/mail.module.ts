@@ -13,29 +13,30 @@ import { join } from 'path';
         // transport: config.get("MAIL_TRANSPORT"),
         // or
         transport: {
-          host: config.get('smtpHost'),
-          port: config.get('smtpPort'),
-          secure: config.get('nodeEnv') === 'production',
-          auth: config.get('nodeEnv') === 'production' && {
-            user: config.get('smtpEmail'),
-            pass: config.get('smtpPassword'),
+          host: "smtp.gmail.com",
+          // port: 465,
+          // secure: true,
+          auth:{
+            user: 'danielobichere@gmail.com',
+            pass: 'asyy acdw azya dsex',
           },
-          tls: {
-            rejectUnauthorized: config.get('nodeEnv') === 'production',
-          },
+          // tls: {
+          //   rejectUnauthorized: config.get('nodeEnv') === 'production',
+          // },
         },
         defaults: {
-          from: `"${config.get('fromName')}" <${config.get('fromEmail')}>`,
+          from:'danielobichere@gmail.com' ,
         },
         template: {
-          dir: join(__dirname, 'templates'),
+          dir: join(__dirname, './templates'),
           adapter: new HandlebarsAdapter(),
           options: {
             strict: true,
+
           },
         },
       }),
-      inject: [ConfigService],
+    inject: [ConfigService],
     }),
   ],
   providers: [MailService],
