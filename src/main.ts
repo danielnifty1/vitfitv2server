@@ -22,7 +22,7 @@ async function bootstrap() {
       }
     }), 
   );
-  app.enableCors({origin:['http://127.0.0.1:5502','http://localhost:5173','http://127.0.0.1:5173/']});
+  app.enableCors({origin:['http://127.0.0.1:5502','http://localhost:5173','http://127.0.0.1:5173/','https://vitfit-v2.netlify.app/']});
   await app.listen(8080);
 }
 bootstrap();
