@@ -1,14 +1,12 @@
-import { Injectable } from '@nestjs/common';
+
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import {
-  TypeOrmModule,
+  
   TypeOrmModuleAsyncOptions,
   TypeOrmModuleOptions,
 } from '@nestjs/typeorm';
 
-import { Book } from 'src/user/entity/booking.entity';
 
-import { MysqlConnectionOptions } from 'typeorm/driver/mysql/MysqlConnectionOptions';
 
 export default class TypeOrmConfig {
   static getOrmConfig(configService: ConfigService): TypeOrmModuleOptions {
