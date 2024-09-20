@@ -13,19 +13,19 @@ import { join } from 'path';
         // transport: config.get("MAIL_TRANSPORT"),
         // or
         transport: {
-          host: "smtp.gmail.com",
-          // port: 465,
-          // secure: true,
+          host: "vitfitcoaching.com",
+          port: 465,
+          secure: true,
           auth:{
-            user: 'danielobichere@gmail.com',
-            pass: 'asyy acdw azya dsex',
+            user: 'vitfitcoaching@vitfitcoaching.com',
+            pass: 'vitfitcoaching.com',
           },
           // tls: {
           //   rejectUnauthorized: config.get('nodeEnv') === 'production',
           // },
         },
         defaults: {
-          from:'danielobichere@gmail.com' ,
+          from:'vitfitcoaching@vitfitcoaching.com' ,
         },
         template: {
           dir: join(__dirname, './templates'),
