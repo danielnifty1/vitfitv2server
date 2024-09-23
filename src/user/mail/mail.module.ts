@@ -13,25 +13,25 @@ import { join } from 'path';
         // transport: config.get("MAIL_TRANSPORT"),
         // or
         transport: {
-          host: "smtp.gmail.com",
-          // host: "mail.yangmedic.com",
+          // host: "smtp.gmail.com",
+          host: "mail.yangmedic.com",
 
-          // port: 465,
-          // secure: true,
+          port: 465,
+          secure: true,
 
           auth:{
-            user: 'danielobichere@gmail.com',
-            pass: 'asyy acdw azya dsex',
+            // user: 'danielobichere@gmail.com',
+            // pass: 'asyy acdw azya dsex',
 
-            // user: 'support@yangmedic.com',
-            // pass: 'yangmedic.com1234',
+            user: 'support@yangmedic.com',
+            pass: 'yangmedic.com1234',
           },
           // tls: {
           //   rejectUnauthorized: config.get('nodeEnv') === 'production',
           // },
         },
         defaults: {
-          from:'danielobichere@gmail.com' ,
+          from:'support@yangmedic.com' ,
         },
         template: {
           dir: join(__dirname, './templates'),
