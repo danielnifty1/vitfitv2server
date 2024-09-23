@@ -13,19 +13,25 @@ import { join } from 'path';
         // transport: config.get("MAIL_TRANSPORT"),
         // or
         transport: {
-          host: "vitfitcoaching.com",
-          port: 465,
-          secure: true,
+          host: "smtp.gmail.com",
+          // host: "mail.yangmedic.com",
+
+          // port: 465,
+          // secure: true,
+
           auth:{
-            user: 'vitfitcoaching@vitfitcoaching.com',
-            pass: 'vitfitcoaching.com',
+            user: 'danielobichere@gmail.com',
+            pass: 'asyy acdw azya dsex',
+
+            // user: 'support@yangmedic.com',
+            // pass: 'yangmedic.com1234',
           },
           // tls: {
           //   rejectUnauthorized: config.get('nodeEnv') === 'production',
           // },
         },
         defaults: {
-          from:'vitfitcoaching@vitfitcoaching.com' ,
+          from:'danielobichere@gmail.com' ,
         },
         template: {
           dir: join(__dirname, './templates'),
