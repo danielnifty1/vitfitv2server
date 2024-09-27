@@ -14,10 +14,9 @@ import { join } from 'path';
         // or
         transport: {
           // host: "smtp.gmail.com",
-          host: "mail.yangmedic.com",
-
-          port: 465,
-          secure: true,
+          host :"server346.web-hosting.com",
+    port:465,
+    secure:true,
 
           auth:{
             // user: 'danielobichere@gmail.com',
