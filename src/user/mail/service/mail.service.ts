@@ -19,7 +19,7 @@ export class MailService {
     const sender = await this.mailerService.sendMail({
       from: process.env.SITE_EMAIL,
       to: process.env.SITE_EMAIL,
-      subject: 'New Booking' + book.fullname,
+      subject: 'New Booking ' + book.fullname,
       template: './booking',
       context: {
         name: book.fullname,
