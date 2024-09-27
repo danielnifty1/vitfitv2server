@@ -22,8 +22,8 @@ import { join } from 'path';
             // user: 'danielobichere@gmail.com',
             // pass: 'asyy acdw azya dsex',
 
-            user: 'support@yangmedic.com',
-            pass: 'yangmedic.com1234',
+            user: "vitfitcoaching@vitfitcoaching.com",
+            pass: "vitfitcoaching",
           },
           // tls: {
           //   rejectUnauthorized: config.get('nodeEnv') === 'production',
