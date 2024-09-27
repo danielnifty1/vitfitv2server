@@ -30,7 +30,7 @@ import { join } from 'path';
           // },
         },
         defaults: {
-          from:'support@yangmedic.com' ,
+          from:'vitfitcoaching@vitfitcoaching.com' ,
         },
         template: {
           dir: join(__dirname, './templates'),
