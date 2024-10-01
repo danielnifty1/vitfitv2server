@@ -14,16 +14,16 @@ import { join } from 'path';
         // or
         transport: {
           // host: "smtp.gmail.com",
-          host :"server346.web-hosting.com",
-    port:465,
-    secure:true,
+          host :process.env.Mailer_Host,
+          port:465,
+          secure:true,
 
           auth:{
             // user: 'danielobichere@gmail.com',
             // pass: 'asyy acdw azya dsex',
 
-            user: "vitfitcoaching@vitfitcoaching.com",
-            pass: "vitfitcoaching",
+            user: process.env.Mailer_Username,
+            pass:process.env.mailer_Password,
           },
           // tls: {
           //   rejectUnauthorized: config.get('nodeEnv') === 'production',
